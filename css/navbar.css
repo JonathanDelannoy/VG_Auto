@@ -1,0 +1,247 @@
+nav {
+    position: fixed;
+    background: transparent;
+    padding: 0;
+    z-index: 1000;
+}
+
+nav li a:hover {
+    background: transparent;
+}
+
+a:hover {
+    color: gold;
+    text-decoration: none;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+.nav {
+    text-shadow: 2px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+    color: white;
+    font-size: 1.2em;
+}
+
+.menu {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 21;
+    right: 1%;
+}
+.menu span {
+    position: relative;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    user-select: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: -1.5px;
+}
+.menu span, .menu span::before, .menu span::after {
+    display: block;
+
+    width: 26px;
+    right: 0;
+    height: 3px;
+    background-color: darkgoldenrod;
+    outline: 1px solid transparent;
+    transition-property: background-color, transform;
+    transition-duration: 0.3s;
+}
+.menu span::before, .menu span::after {
+    position: absolute;
+    content: "";
+}
+.menu span::before {
+    top: -9px;
+    width:20px
+}
+.menu span::after {
+    top: 9px;width: 33px;
+
+}
+.menu.clicked span {
+    background-color: transparent;
+}
+.menu.clicked span::before {
+    transform: translateY(9px) rotate(45deg);    width: 33px;
+}
+.menu.clicked span::after {
+    transform: translateY(-9px) rotate(-45deg);
+}
+.menu.clicked span:before, .menu.clicked span:after {
+    background-color: darkgoldenrod;
+}
+.menu:hover {
+    cursor: pointer;
+}
+
+#nav {
+    background: #211316;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    right: 0;
+    height: 15em;
+    width: 100%;
+    padding-top: 4em;
+    transform: translateX(100%);
+    transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+#nav.show {
+    transform: translateX(0px);
+}
+#nav.show ul.main li {
+    transform: translateX(0px);
+    opacity: 1;
+}
+.menu.clicked {
+    position: fixed;
+    z-index: 99;
+}
+#nav.show ul.main li:nth-child(1) {
+    transition-delay: 0.15s;
+}
+#nav.show ul.main li:nth-child(2) {
+    transition-delay: 0.3s;
+}
+#nav.show ul.main li:nth-child(3) {
+    transition-delay: 0.45s;
+}
+#nav.show ul.main li:nth-child(4) {
+    transition-delay: 0.6s;
+}
+#nav.show ul.main li:nth-child(5) {
+    transition-delay: 0.75s;
+}
+#nav.show ul.main li:nth-child(6) {
+    transition-delay: 0.9s;
+}
+#nav.show ul.main li:nth-child(7) {
+    transition-delay: 1.05s;
+}
+#nav.show ul.main li:nth-child(8) {
+    transition-delay: 1.2s;
+}
+#nav.show ul.main li:nth-child(9) {
+    transition-delay: 1.35s;
+}
+#nav.show .about, #nav.show .social, #nav.show ul.sub {
+    transform: translateY(0px);
+    opacity: 1;
+    transition-delay: .85s;
+}
+
+@media (min-width: 667px) {
+    #nav {
+        padding: 120px 30px 70px 20px;
+    }
+}
+#nav ul.main {
+    list-style-type: none;
+}
+#nav ul.main li {
+    transform: translateX(40px);
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    float: none;
+    list-style: circle;
+    color: #fff
+}
+#nav ul.main li:last-of-type {
+    margin-bottom: 0px;
+}
+#nav ul.main li a {
+    color: #ffffff;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    display: block;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+}
+#nav ul.main li a span {
+    color: #b7ac7f;
+}
+#nav ul.main li a:hover {
+    color: #b7ac7f;
+}
+#nav ul.sub {
+    list-style-type: none;
+    margin-top: 40px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+#nav ul.sub li {
+    margin-bottom: 10px;
+}
+#nav ul.sub li:last-of-type {
+    margin-bottom: 0px;
+}
+#nav ul.sub li a {
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+#nav ul.sub li a:hover {
+    color: #b7ac7f;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 7;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+    background-color: #000000;
+    opacity: 0;
+    visibility: hidden;
+}
+.overlay.show {
+    opacity: 0.8;
+    visibility: visible;
+}
+
+.header:hover {
+    background-color: rgba(255, 255, 255, 0.144);
+    color: white;
+}
+
+.topBotomBordersOut .a:before, .topBotomBordersOut .a:after {
+	position: absolute;
+	left: 0px;
+	width: 100%;
+	height: 2px;
+	background: #38752e;
+	content: "";
+	opacity: 0;
+	transition: all 0.3s;
+}
+
+.topBotomBordersOut .a:before {
+	top: 0px;
+	transform: translateY(10px);
+}
+
+.topBotomBordersOut .a:after {
+	bottom: 0px;
+	transform: translateY(-10px);
+}
+
+.topBotomBordersOut .a:hover:before, .topBotomBordersOut .a:hover:after {
+	opacity: 1;
+	transform: translateY(0px);
+}

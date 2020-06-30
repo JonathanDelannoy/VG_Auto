@@ -1,0 +1,146 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.couleur {
+    color: rgb(35, 99, 35);
+    font-weight: bolder;
+}
+
+.couleur1 {
+    color: rgb(35, 99, 35);
+}
+
+.couleur2 {
+    color: white;
+}
+
+.couleur:hover {
+    color: rgb(8, 34, 0);
+}
+
+.bordure {
+    border-right: black 1px solid;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.bord {
+    padding-left: 0.5em;
+}
+
+.separation {
+    border-right: black 1px solid;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+.separation1 {
+    border-right: black 1px solid;
+}
+
+.green {
+    background-color: rgb(35, 99, 35);
+    color: white;
+}
+
+.back {
+    background-image: url(../img/back.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 75vh;
+}
+
+.back1 {
+    background: linear-gradient(#163117, #5aaa5a);
+}
+
+.back2 {
+    background-image: url(https://www.gomecano.com/media/wysiwyg/batterie-bkg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rdv {
+    margin-top: 8em;
+    width: 40em;
+}
+
+.btn_width {
+    width: 10em;
+}
+
+.btn_height {
+    height: 7.5em;
+}
+
+.circle {
+    width: 1.5em;
+}
+
+.services-container {
+    width: 100%;
+    max-height: 20em;
+    overflow: hidden;
+}
+
+.title {
+    position: absolute;
+    top: 12em;
+}
+
+#message {
+    resize: none;
+}
+
+.star {
+    cursor: pointer;
+}
+
+.image_resp {
+    width: 30em;
+    height: 18.75em;
+}
+
+.div-services {
+    height: 10em;
+}
+
+.position {
+    position: absolute;
+    bottom: 0.5em;
+    left: 0;
+}
+
+.alignment {
+    position: relative;
+    bottom: 0.5em;
+}
+
+.star-input {
+    display: none;
+}
+
+.star {
+    color: gold;
+}
+
+.star-input:checked+.star~.star {
+    color: silver;
+}
+
+.carousel_height{
+    height: 17em;
+    padding: 0;
+}
+
+.carousel_bottom{
+    position: absolute;
+    bottom: 0.2em;
+}
+
+.filter{
+    display: none;
+}

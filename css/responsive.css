@@ -1,0 +1,161 @@
+@media (max-width: 1240px) {
+    .delete {
+        display: none;
+    }
+}
+
+@media (max-width: 1440px) {
+    .rdv {
+        margin-top: 2em;
+    }
+}
+
+@media (max-width: 868px) {
+    .rdv {
+        width: 35em;
+    }
+}
+
+@media (max-width: 760px) {
+    .rdv {
+        width: 30em;
+    }
+    .btn_width {
+        width: 7em;
+    }
+}
+
+@media (max-width: 767px) {
+    .delete2 {
+        display: none;
+    }
+}
+
+@media (max-width: 565px) {
+    .rdv {
+        margin-top: 3em;
+    }
+}
+
+@media (max-width: 520px) {
+    .btn_width {
+        width: 6em;
+    }
+}
+
+@media (max-width: 450px) {
+    .btn_width {
+        width: 6em;
+    }
+}
+
+@media (max-width: 400px) {
+    .span-delete {
+        display: none;
+    }
+    .btn_width {
+        width: 4em;
+    }
+    .btn_height {
+        height: 4em;
+    }
+}
+
+@media (max-width: 575px) {
+    .resp {
+        text-align: center;
+    }
+}
+
+@media (max-width: 645px) {
+    .image_resp {
+        width: 20em;
+        height: 12.5em;
+    }
+}
+
+@media (max-width: 400px) {
+    .image_resp {
+        width: 11em;
+        height: 8em;
+    }
+}
+
+@media (max-width: 990px) {
+    .resp-contact {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .resp-opinions {
+        text-align: center;
+    }
+}
+
+@media (max-width: 575px) {
+    .resp-opinions1 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1075px) {
+    .div-services {
+        height: 15em;
+    }
+}
+
+@media (max-width: 315px) {
+    .div-services {
+        height: 20em;
+    }
+}
+
+@media (max-width: 1244px) {
+    .title {
+        position: absolute;
+        top: 15em;
+    }
+}
+
+@media (max-width: 1200px) {
+    .title {
+        position: absolute;
+        top: 17em;
+    }
+}
+
+@media (max-width: 711px) {
+    .title {
+        position: absolute;
+        top: 18em;
+    }
+}
+
+@media (max-width: 600px) {
+    .title {
+        position: absolute;
+        top: 15em;
+    }
+}
+
+@media (max-width: 575px) {
+    .title {
+        position: absolute;
+        top: 8em;
+    }
+}
+
+@media (max-width: 430px) {
+    .title {
+        position: absolute;
+        top: 5em;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .carousel_resp {
+        display: none;
+    }
+}
